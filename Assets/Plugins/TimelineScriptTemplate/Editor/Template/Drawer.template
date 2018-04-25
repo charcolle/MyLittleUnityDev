@@ -1,0 +1,11 @@
+﻿using UnityEngine;
+using UnityEditor;
+
+[CustomPropertyDrawer( typeof( #CLASS#Behaviour ) )]
+public class #CLASS#Drawer : PropertyDrawer {
+
+    public override void OnGUI( Rect position, SerializedProperty property, GUIContent label ) {
+        base.OnGUI( position, property, label );
+    }
+
+}

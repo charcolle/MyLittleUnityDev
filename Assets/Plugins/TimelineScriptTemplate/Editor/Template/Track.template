@@ -1,0 +1,16 @@
+﻿using System;
+using UnityEngine;
+using UnityEngine.Playables;
+using UnityEngine.Timeline;
+
+public class #CLASS#Track : TrackAsset {
+
+    public override Playable CreateTrackMixer( PlayableGraph graph, GameObject go, int inputCount ) {
+        return ScriptPlayable<#CLASS#Behaviour>.Create( graph, inputCount );
+    }
+
+    public override void GatherProperties( PlayableDirector director, IPropertyCollector driver ) {
+        base.GatherProperties( director, driver );
+    }
+
+}
